@@ -8,7 +8,7 @@ let todoRoutes = require('./routes/todos.js')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/views'));
 
 app.get('/', function(req,res){
