@@ -10,10 +10,14 @@ When a li is clicked the completed status is toggled true/false.  A put request 
 When the red 'X' is clicked on a li the request is sent to the delete endpoint for that todo based on its id.  The todo is then removed from the list.
 
 
-## Back-End
+## Back-End:
 This node app uses the express framework and a Mongo Atlas database.  Mongoose is used to setup the schema.
 Endpoints are configured for GET, POST, PUT and DELETE.
+
 GET will return the JSON file for the todos
+
 POST will handle adding a new todo
+
 PUT will handle updating a specific todo
+
 DELETE will handle removing a specific todo
